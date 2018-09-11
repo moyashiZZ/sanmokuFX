@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="381.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sanmokuFx.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="455.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sanmokuFx.FXMLDocumentController">
    <children>
-      <VBox prefHeight="104.0" prefWidth="394.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox prefHeight="66.0" prefWidth="394.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <HBox alignment="CENTER" prefHeight="69.0" prefWidth="394.0">
+            <HBox alignment="CENTER" prefHeight="47.0" prefWidth="394.0">
                <children>
                   <Button fx:id="reset" mnemonicParsing="false" onAction="#resetAll" text="Reset" />
                   <Button mnemonicParsing="false" onAction="#changeSave" text="Save">
@@ -27,12 +27,12 @@
                   <Button fx:id="nextButton" mnemonicParsing="false" onAction="#nextButton" text="Next" />
                </children>
                <VBox.margin>
-                  <Insets bottom="50.0" />
+                  <Insets top="10.0" />
                </VBox.margin>
             </HBox>
          </children>
       </VBox>
-      <VBox layoutX="34.0" layoutY="17.0" prefHeight="292.0" prefWidth="327.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="17.0">
+      <VBox layoutX="34.0" layoutY="17.0" prefHeight="292.0" prefWidth="327.0" AnchorPane.topAnchor="70.0">
          <children>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
@@ -106,13 +106,6 @@
                            </VBox.margin>
                         </Label>
                         <Button fx:id="data1" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#button1Action" prefHeight="25.0" prefWidth="280.0" />
-                     </children>
-                     <VBox.margin>
-                        <Insets />
-                     </VBox.margin>
-                  </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                     <children>
                         <Label text="2.">
                            <VBox.margin>
                               <Insets right="270.0" />
@@ -120,6 +113,9 @@
                         </Label>
                         <Button fx:id="data2" mnemonicParsing="false" onAction="#button2Action" prefHeight="25.0" prefWidth="280.0" />
                      </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
                   </VBox>
                </children>
                <VBox.margin>
@@ -128,11 +124,8 @@
             </VBox>
          </children>
          <padding>
-            <Insets bottom="40.0" top="40.0" />
+            <Insets bottom="20.0" />
          </padding>
       </VBox>
    </children>
-   <padding>
-      <Insets bottom="20.0" top="20.0" />
-   </padding>
 </AnchorPane>
